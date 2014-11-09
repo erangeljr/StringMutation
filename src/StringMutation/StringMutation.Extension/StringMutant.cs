@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StringMutation.Extension
+﻿namespace StringMutation.Extension
 {
     public static class StringMutant
     {
-        public static string StringExtension(this string value)
+        public static string StringExtension(this string input)
         {
-            return value;
+            return input;
         }
-        
+
+        public static string[] Lines(this string input  )
+        {
+            
+            return input.Split('\n');
+        }
+
     }
 }

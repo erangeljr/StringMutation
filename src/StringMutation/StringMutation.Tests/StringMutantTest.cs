@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StringMutation;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StringMutation.Extension;
 
 namespace StringMutation.Tests
@@ -13,11 +11,25 @@ namespace StringMutation.Tests
         {
 
             //Arrange
-            string tester = "A Test String";
+            string expected = "A Test String";
             //Act
-            tester.StringExtension();
+            var actual = expected.StringExtension();
             //Assert
-            Assert.AreEqual(tester,tester.StringExtension());
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Can_Return_Lines()
+        {
+            //Arrange
+            string expected = "This is one line.\nThis is two lines.";
+            
+            //Act
+            string[] result = expected.Lines();
+            var actual = result[0] + "\n" + result[1];
+            //Assert
+            Assert.AreEqual(expected, actual);
+
         }
     }
 }
