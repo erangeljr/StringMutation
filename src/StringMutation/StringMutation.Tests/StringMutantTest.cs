@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StringMutation.Extension;
 
@@ -70,6 +71,22 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected[0],actual[0]);
             Assert.AreEqual(expected[1], actual[1]);
             Assert.AreEqual(expected[2], actual[2]);
+        }
+
+        [TestMethod]
+        public void Can_Return_Characters()
+        {
+            //Arrange
+            var primer = "lorem";
+            var expected = new char[] {'l', 'o', 'r', 'e', 'm'};
+            //Act
+            var actual = primer.Characters();
+            //Assert
+            Assert.AreEqual(expected[0],actual[0]);
+            Assert.AreEqual(expected[1],actual[1]);
+            Assert.AreEqual(expected[2],actual[2]);
+            Assert.AreEqual(expected[3],actual[3]);
+            Assert.AreEqual(expected[4],actual[4]);
         }
 
     }

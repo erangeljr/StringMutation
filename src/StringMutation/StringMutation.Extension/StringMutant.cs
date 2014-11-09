@@ -64,13 +64,23 @@ namespace StringMutation.Extension
         }
 
         /// <summary>
-        /// 
+        /// Returns a String Array with each word in an index
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         public static string[] Words(this string input)
         {
             return input.Split(' ');
+        }
+
+        /// <summary>
+        /// Returns a Char Array with each Char in an index
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static char[] Characters(this string input)
+        {
+            return input.ToCharArray();
         }
 
     }
