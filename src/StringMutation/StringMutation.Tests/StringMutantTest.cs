@@ -23,9 +23,9 @@ namespace StringMutation.Tests
         {
             //Arrange
             string expected = "This is one line.\nThis is two lines.";
-            
-            //Act
             string[] result = expected.Lines();
+
+            //Act
             var actual = result[0] + "\n" + result[1];
             //Assert
             Assert.AreEqual(expected, actual);
