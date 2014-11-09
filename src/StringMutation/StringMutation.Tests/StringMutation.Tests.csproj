@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>ff02be57-5f62-4591-8cc3-8dba57621da8</ProjectGuid>
+    <ProjectGuid>{2EF26712-9A8B-4FEE-9FFD-3838B0B4A6F9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StringMutation.Tests</RootNamespace>
@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringMutantTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StringMutation.Extension\StringMutation.Extension.csproj">
+      <Project>{13501467-846d-43cc-8653-c0affa7acb32}</Project>
+      <Name>StringMutation.Extension</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

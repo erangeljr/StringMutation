@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>d085118b-0f98-4b27-adb5-e40e8036994d</ProjectGuid>
+    <ProjectGuid>{A6E8DFD5-5923-4910-8880-E81BEDBDA11C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StringMutation.Console</RootNamespace>

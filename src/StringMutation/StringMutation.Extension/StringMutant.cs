@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace StringMutation.Extension
 {
-    public class Class1
+    public static class StringMutant
     {
+        public static string StringExtension(this string value)
+        {
+            return value;
+        }
+        
     }
 }
