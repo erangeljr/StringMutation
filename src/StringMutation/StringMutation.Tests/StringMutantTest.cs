@@ -58,5 +58,19 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected,actual);
         }
 
+        [TestMethod]
+        public void Can_Return_Words()
+        {
+            //Arrange
+            var primer = "lorem ipsum dolor";
+            var expected = new string[] { "lorem", "ipsum", "dolor" };
+            //Act
+            var actual = primer.Words();
+            //Assert
+            Assert.AreEqual(expected[0],actual[0]);
+            Assert.AreEqual(expected[1], actual[1]);
+            Assert.AreEqual(expected[2], actual[2]);
+        }
+
     }
 }

@@ -63,5 +63,15 @@ namespace StringMutation.Extension
             return String.Join(" ", result);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string[] Words(this string input)
+        {
+            return input.Split(' ');
+        }
+
     }
 }
