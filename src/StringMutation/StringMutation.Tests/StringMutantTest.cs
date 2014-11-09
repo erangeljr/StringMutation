@@ -44,5 +44,18 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected,actual);
         }
 
+        [TestMethod]
+        public void Can_Return_Titleized_String()
+        {
+            //'lorem ipsum dolor'); // => Lorem Ipsum Dolor
+            //Arrange
+            var primer = "lorem ipsum dolor";
+            var expected = "Lorem Ipsum Dolor";
+            //Act
+            var actual = primer.Titleize();
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
+
     }
 }

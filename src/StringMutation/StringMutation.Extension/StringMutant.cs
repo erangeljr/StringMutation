@@ -1,4 +1,6 @@
-﻿namespace StringMutation.Extension
+﻿using System;
+
+namespace StringMutation.Extension
 {
     /// <summary>
     /// 
@@ -33,6 +35,18 @@
         public static string Capitalize(this string input)
         {
             return input[0].ToString().ToUpper() + input.Substring(1);
+        }
+
+        public static string Titleize(this string input)
+        {
+            var result = input.Split(' ');
+
+            for (int i = 0; i <= result.Length - 1; i++)
+            {
+                result[i] = Capitalize(result[i]);
+            }
+
+            return String.Join(" ", result);
         }
 
     }
