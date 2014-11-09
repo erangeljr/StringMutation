@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StringMutation.Extension;
 
 namespace StringMutation.Tests
@@ -17,7 +18,7 @@ namespace StringMutation.Tests
             //Assert
             Assert.AreEqual(expected, actual);
         }
-
+        
         [TestMethod]
         public void Can_Return_Lines()
         {

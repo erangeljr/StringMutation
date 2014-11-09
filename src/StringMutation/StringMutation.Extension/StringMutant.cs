@@ -14,6 +14,8 @@ namespace StringMutation.Extension
         /// <returns></returns>
         public static string StringExtension(this string input)
         {
+            if(String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
             return input;
         }
 
@@ -24,6 +26,8 @@ namespace StringMutation.Extension
         /// <returns></returns>
         public static string[] Lines(this string input  )
         {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
             return input.Split('\n');
         }
 
@@ -34,11 +38,21 @@ namespace StringMutation.Extension
         /// <returns></returns>
         public static string Capitalize(this string input)
         {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
             return input[0].ToString().ToUpper() + input.Substring(1);
         }
 
+        /// <summary>
+        /// Returns a String that has every word Capitalized
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static string Titleize(this string input)
         {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
+
             var result = input.Split(' ');
 
             for (int i = 0; i <= result.Length - 1; i++)
