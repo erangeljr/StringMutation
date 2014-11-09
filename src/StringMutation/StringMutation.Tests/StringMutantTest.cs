@@ -31,5 +31,18 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void Can_Return_Capitalized_Word()
+        {
+            //Arrange
+            var primer = "california";
+            var expected = "California";
+            //Act
+            var actual = primer.Capitalize();
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
+
     }
 }

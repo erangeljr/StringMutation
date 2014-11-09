@@ -22,8 +22,17 @@
         /// <returns></returns>
         public static string[] Lines(this string input  )
         {
-            
             return input.Split('\n');
+        }
+
+        /// <summary>
+        /// Returns a string with the first character Capitalized
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string Capitalize(this string input)
+        {
+            return input[0].ToString().ToUpper() + input.Substring(1);
         }
 
     }
