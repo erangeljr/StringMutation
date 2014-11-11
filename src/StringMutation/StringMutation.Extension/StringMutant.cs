@@ -105,7 +105,7 @@ namespace StringMutation.Extension
         }
 
         /// <summary>
-        /// 
+        /// Return the number of lines in a string
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
