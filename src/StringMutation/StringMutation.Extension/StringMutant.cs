@@ -102,8 +102,16 @@ namespace StringMutation.Extension
 
             
             return input.Substring(0, value);;
+        }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static int CountLines(this string input)
+        {
+            return input.Split('\n').Length;
         }
 
     }

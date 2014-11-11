@@ -105,5 +105,16 @@ namespace StringMutation.Tests
             //Assert.AreEqual(expected[4], actual[4]);
         }
 
+        public void Can_Return_Number_Of_Lines()
+        {
+            //Arrange
+            var primer = "This is one line.\nThis is two lines.\nThis is line three.";
+            var expected = 3;
+            //Act
+            var actual = primer.CountLines();
+            //Asset
+            Assert.AreEqual(expected,actual);
+        }
+
     }
 }
