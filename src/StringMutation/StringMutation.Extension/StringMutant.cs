@@ -88,6 +88,13 @@ namespace StringMutation.Extension
             return input.ToCharArray();
         }
 
+        /// <summary>
+        /// Should return a Chopped String as a String Array
+        /// Currently Not Fully Implemented
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static string Chop(this string input, int value)
         {
             if (String.IsNullOrEmpty(input))
