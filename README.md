@@ -1,6 +1,12 @@
 # String Mutation
+C# String Library currently under development.
+
 #### Features
+A String Extension Library to add functionality to the String Type. 
+
 ## Download
+
+
 # Documentation
 
 * [capitalize](#capitalize)
