@@ -89,5 +89,21 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected[4],actual[4]);
         }
 
+        [TestMethod]
+        public void Can_Return_Chop()
+        {
+            //Arrange
+            var primer = "lorem ipsum dolor";
+            var expected = new string[] {"lore", "m ip", "sum ", "dolo", "r"};
+            //Act
+            var actual = primer.Chop(4);
+            //Assert
+            Assert.AreEqual(expected[0], actual);
+            //Assert.AreEqual(expected[1], actual[1]);
+            //Assert.AreEqual(expected[2], actual[2]);
+            //Assert.AreEqual(expected[3], actual[3]);
+            //Assert.AreEqual(expected[4], actual[4]);
+        }
+
     }
 }

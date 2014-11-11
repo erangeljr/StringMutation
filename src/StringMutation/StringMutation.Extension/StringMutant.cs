@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace StringMutation.Extension
 {
@@ -70,6 +71,8 @@ namespace StringMutation.Extension
         /// <returns></returns>
         public static string[] Words(this string input)
         {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
             return input.Split(' ');
         }
 
@@ -80,7 +83,20 @@ namespace StringMutation.Extension
         /// <returns></returns>
         public static char[] Characters(this string input)
         {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
             return input.ToCharArray();
+        }
+
+        public static string Chop(this string input, int value)
+        {
+            if (String.IsNullOrEmpty(input))
+                throw new ArgumentNullException();
+
+            
+            return input.Substring(0, value);;
+
+
         }
 
     }
