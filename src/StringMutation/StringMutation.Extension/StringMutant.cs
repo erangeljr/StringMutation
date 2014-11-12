@@ -128,5 +128,16 @@ namespace StringMutation.Extension
 
         }
 
+        /// <summary>
+        /// Returns number of characters in a strings
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static int CountCharacters(this string input)
+        {
+            return input.Length;
+
+        }
+
     }
 }

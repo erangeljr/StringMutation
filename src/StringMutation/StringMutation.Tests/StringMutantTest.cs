@@ -129,5 +129,17 @@ namespace StringMutation.Tests
             Assert.AreEqual(expected,actual);
         }
 
+        [TestMethod]
+        public void Can_Return_Number_Of_Characters()
+        {
+            //Arrange
+            var primer = "lorem ipsum dolor";
+            var expected = 17;
+            //Act
+            var actual = primer.CountCharacters();
+
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
     }
 }
