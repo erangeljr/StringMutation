@@ -105,6 +105,7 @@ namespace StringMutation.Tests
             //Assert.AreEqual(expected[4], actual[4]);
         }
 
+        [TestMethod]
         public void Can_Return_Number_Of_Lines()
         {
             //Arrange
@@ -112,7 +113,19 @@ namespace StringMutation.Tests
             var expected = 3;
             //Act
             var actual = primer.CountLines();
-            //Asset
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
+
+        [TestMethod]
+        public void Can_Return_String_in_Reverse()
+        {
+            //Arrange
+            var primer = "lorem ipsum dolor";
+            var expected = "rolod muspi merol";
+            //Act
+            var actual = primer.Reverse();
+            //Assert
             Assert.AreEqual(expected,actual);
         }
 

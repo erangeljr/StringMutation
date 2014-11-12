@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace StringMutation.Extension
 {
@@ -112,6 +113,19 @@ namespace StringMutation.Extension
         public static int CountLines(this string input)
         {
             return input.Split('\n').Length;
+        }
+
+        /// <summary>
+        /// Returns a string in reverse order
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string Reverse(this string input)
+        {
+            char[] charArray = input.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+
         }
 
     }
