@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Win32.SafeHandles;
 
 namespace StringMutation.Extension
 {
@@ -137,6 +138,26 @@ namespace StringMutation.Extension
         {
             return input.Length;
 
+        }
+
+        /// <summary>
+        /// Returns a string with left leading spaces removed
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string LeftTrim(this string input)
+        {
+            return input.TrimStart();
+        }
+
+        /// <summary>
+        /// Returns a string with right trailing spaces removed
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string RightTrim(this string input)
+        {
+            return input.TrimEnd();
         }
 
     }

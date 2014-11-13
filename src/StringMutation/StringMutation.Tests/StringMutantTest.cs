@@ -141,5 +141,29 @@ namespace StringMutation.Tests
             //Assert
             Assert.AreEqual(expected,actual);
         }
+
+        [TestMethod]
+        public void Can_Return_LeftTrim()
+        {
+            //Arrange
+            var primer = " lorem ";
+            var expected = "lorem ";
+            //Act
+            var actual = primer.LeftTrim();
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
+
+        [TestMethod]
+        public void Can_Return_RightTrim()
+        {
+            //Arrange
+            var primer = " lorem ";
+            var expected = " lorem";
+            //Act
+            var actual = primer.RightTrim();
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
