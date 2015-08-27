@@ -165,5 +165,17 @@ namespace StringMutation.Tests
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Can_Return_Chars()
+        {
+            //Arrange
+            var primer = "lorem";
+            char[] expected = { 'l','o','r','e','m' };
+            //Act
+            var actual = primer.Chars();
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

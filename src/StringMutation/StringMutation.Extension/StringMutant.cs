@@ -11,7 +11,7 @@ namespace StringMutation.Extension
     public static class StringMutant
     {
         /// <summary>
-        /// 
+        /// Returns sting input
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
@@ -160,5 +160,14 @@ namespace StringMutation.Extension
             return input.TrimEnd();
         }
 
+        /// <summary>
+        /// Returns an array of Chars 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string Chars(this string input)
+        {
+            return input;
+        }
     }
 }
